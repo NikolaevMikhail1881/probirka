@@ -1,49 +1,51 @@
 ﻿#include <iostream> 
 #include <string> 
 
+using std::cin; 
+using std::cout;
+
+
 void task_1() {
-	int num;
-	std::cout << "Enter num: ";
-	std::cin >> num;
-	std::cout << "Num: " << num << "\n";
-	std::string line;
-	for (int i = 0; i <= num; i++) {
-		line += std::to_string(i);
-		std::cout << line << "\n";
+	int m;
+	cout << "Введите число: ";
+	cin >> m;
+	for (int i = 0; i <= m; i++) {
+		for (int j = 0; j <= i; j++) {
+			cout << j;
+
+		}
+		cout << "\n";
 	}
+}
+unsigned long long fact(int b) {
+	if (b == 0) return 1;
+	unsigned long long k = 1;
+	for (int i = 1; i <= b; i++) {
+		k = k * i;
+	} return k;
 }
 
 void task_2() {
 	int n;
-	unsigned long long Cnk = 1;
 
-	std::cout << "Введите число n: ";
-	std::cin >> n;
-	std::cout << "Ваши биноминальные коэфиценты\n";
-
-	for (int k = 1; k <= n + 1; k++) {
-		std::cout << Cnk << " ";
-		Cnk = Cnk * (n + 1 - k) / k;
+	cout << "Введите число n: ";
+	cin >> n;
+	cout << "Ваши биномиальные коэфиценты\n";
+	for (int i = 0; i <= n; i++) {
+		cout << fact(n) / (fact(i) * fact(n - i)) << " ";
 	}
-	std::cout << "\n";
 }
 
+
 void task_3() {
-	std::string s_num;
-	int ctn = 0;
-	int summ = 0;
-
-	std::cout << "Enter num[0]: ";
-	std::cin >> s_num;
-	while (s_num != "-") {
-		summ += std::atoi(s_num.c_str());
-		ctn++;
-
-		std::cout << "Enter num[" << ctn << "]: ";
-		std::cin >> s_num;
+	int sum = 0, col, x = 1;
+	for (int i = 0; x != 0; i++) {
+		cout << "Введите " << i << "-е число : ";
+		cin >> x;
+		sum = sum + x;
+		col = i; 
 	}
-
-	std::cout << double(summ) / ctn << "\n";
+	cout << "\n" << "Cреднее арифметическое введенных точек = " << double(sum) / col;
 }
 
 int main()
