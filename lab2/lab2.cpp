@@ -1,5 +1,5 @@
 ﻿#include <iostream> 
-#include <string> 
+
 
 using std::cin; 
 using std::cout;
@@ -9,7 +9,7 @@ void task_1() {
 	int m;
 	cout << "Введите число: ";
 	cin >> m;
-	for (int i = 0; i <= m; i++) {
+	for (int i = 0; i <= m; i++) {           // Объявляем и инициализируем переменную в цикле for, вводим условие 
 		for (int j = 0; j <= i; j++) {
 			cout << j;
 
@@ -17,9 +17,9 @@ void task_1() {
 		cout << "\n";
 	}
 }
-unsigned long long fact(int b) {
-	if (b == 0) return 1;
-	unsigned long long k = 1;
+  double fact(int b) {     // double (увеличенный промежуток c плавающей точкой) - т.к будут факториалы 
+	if (b == 0) return 1;	// возвращаемое значение 
+	double k = 1;
 	for (int i = 1; i <= b; i++) {
 		k = k * i;
 	} return k;
@@ -42,20 +42,20 @@ void task_3() {
 	for (int i = 0; x != 0; i++) {
 		cout << "Введите " << i << "-е число : ";
 		cin >> x;
-		sum = sum + x;
+		sum = sum + x;         // sum = сумма вводимых чисел; col = i =  количество вводимых чисел (для счета среднего)
 		col = i; 
 	}
-	cout << "\n" << "Cреднее арифметическое введенных точек = " << double(sum) / col;
+	cout << "\n" << "Cреднее арифметическое введенных точек = " << double(sum) / col;  // явное преобразование (может получитсья нецелое число))
 }
 
 int main()
 {
-	setlocale(LC_ALL, "RU");
+	setlocale(LC_ALL, "RU"); // подключаем русский язык 
 	int menu;
-	std::cout << "Enter menu mode: ";
-	std::cin >> menu;
+	cout << "Enter menu mode: ";
+	cin >> menu;
 
-	switch (menu) {
+	switch (menu) {      // используем switch - case для меню выбора задания 
 	case 1:
 		task_1();
 		break;
@@ -66,10 +66,26 @@ int main()
 		task_3();
 		break;
 	case 4:
-		std::cout << "Exit\n";
+		cout << "Exit\n";
 		break;
 	default:
-		std::cout << "Exit\n";
+		cout << "Exit\n";
 		break;
 	}
 }
+
+/*
+void sort(mas,left,right)
+{
+условие остановки
+	sort(mas,left,(left+right)/2);
+	sort(mas,(left+right)/2+1,right);
+	merge(mas,left,right);
+}
+
+void merge(mas,left,right)
+{
+	сливаем обе половины
+}
+
+*/
