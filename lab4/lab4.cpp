@@ -22,7 +22,7 @@ void task_2(int arr[], int r) {
 //void task_3(int arr[], int r) {
 //	int* vsp = new int[r];                  // вспомогательный массив 
 //	for (int i = 0; i < r; i+=2) {          // i+=2 потому что идем только по четным числам начиная с 0 
-//		int sum = 0;                        // обнудяем сумму
+//		int sum = 0;                        // обнуляем сумму
 //		int elem = arr[i];                  // elem приравниваем к элементу массиву arr c индексом i
 //		vsp[i] = arr[i];                    // i элемент вспомогательного массива приравниваем к i элементу массива arr
 //		while (elem / 10 > 0 || (elem < 10 && elem > 0)) {                // цикл while
@@ -61,6 +61,7 @@ void task_2(int arr[], int r) {
 //	cout << endl;
 //}
 
+
 void task_3(int arr[], int r) {
 	int* vsp = new int[2 * r];                    // вспомогательный массив   
 	int sch = 0;         // счетчик                         // 2 * r  т.к идем только по сумме его четных цифр 
@@ -81,11 +82,11 @@ void task_3(int arr[], int r) {
 		vsp[i + 1] = sum;                         // сумма цифр пред. элемента
 		sch++;
 	} 
-	cout << "ВСП : ";
+	/*cout << "ВСП : ";
 	for (int i = 0; i < 2 * r; i++) {
 		cout << vsp[i] << " ";
 	}
-	cout << endl; 
+	cout << endl; */
 
 
 	/*cout << "Вспомогательный массив \n";
@@ -188,11 +189,9 @@ int main() {
 		case 5:
 			flag = false;     // если выбрать 5 то флаг станет false и мы получим выход из программы
 			break;
-		
-
-
 		}
 	}
+	delete[] arr;
 }
 
 
