@@ -1,4 +1,5 @@
-﻿#include <iostream>
+﻿// lab 1
+#include <iostream>
 #include <bitset>
 
 using std::cin;
