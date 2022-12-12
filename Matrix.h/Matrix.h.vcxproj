@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{6619a477-584e-4413-a6c8-fc1b8a3fba13}</ProjectGuid>
-    <RootNamespace>lab9</RootNamespace>
+    <ProjectGuid>{63a7a3f6-4291-4d4d-b30f-5b211152e843}</ProjectGuid>
+    <RootNamespace>Matrixh</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,11 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="lab9.cpp" />
-    <ClCompile Include="matrix.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="matrix.h" />
+    <ClCompile Include="Matrix.h.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,4 +1,5 @@
-﻿#include <iostream>
+﻿// lab 4.2
+#include <iostream>
 #include <fstream>
 
 using std::cin;
