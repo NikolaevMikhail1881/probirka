@@ -29,6 +29,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lab 12", "lab 12\lab 12.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Matrix.h", "Matrix.h\Matrix.h.vcxproj", "{63A7A3F6-4291-4D4D-B30F-5B211152E843}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5.1.det", "5.1.det\5.1.det.vcxproj", "{4432B7D3-C8A3-4852-8992-43A42AA3CA64}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -141,6 +143,14 @@ Global
 		{63A7A3F6-4291-4D4D-B30F-5B211152E843}.Release|x64.Build.0 = Release|x64
 		{63A7A3F6-4291-4D4D-B30F-5B211152E843}.Release|x86.ActiveCfg = Release|Win32
 		{63A7A3F6-4291-4D4D-B30F-5B211152E843}.Release|x86.Build.0 = Release|Win32
+		{4432B7D3-C8A3-4852-8992-43A42AA3CA64}.Debug|x64.ActiveCfg = Debug|x64
+		{4432B7D3-C8A3-4852-8992-43A42AA3CA64}.Debug|x64.Build.0 = Debug|x64
+		{4432B7D3-C8A3-4852-8992-43A42AA3CA64}.Debug|x86.ActiveCfg = Debug|Win32
+		{4432B7D3-C8A3-4852-8992-43A42AA3CA64}.Debug|x86.Build.0 = Debug|Win32
+		{4432B7D3-C8A3-4852-8992-43A42AA3CA64}.Release|x64.ActiveCfg = Release|x64
+		{4432B7D3-C8A3-4852-8992-43A42AA3CA64}.Release|x64.Build.0 = Release|x64
+		{4432B7D3-C8A3-4852-8992-43A42AA3CA64}.Release|x86.ActiveCfg = Release|Win32
+		{4432B7D3-C8A3-4852-8992-43A42AA3CA64}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
