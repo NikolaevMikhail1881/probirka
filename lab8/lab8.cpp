@@ -1,4 +1,5 @@
-﻿#include "Matrix_reload.h"
+﻿// lab 5.2
+#include "Matrix_reload.h"
 #include <iostream>
 int main() {
 	setlocale(LC_ALL, "RUS");

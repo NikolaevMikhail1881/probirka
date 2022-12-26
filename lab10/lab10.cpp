@@ -9,6 +9,7 @@ public:
     position() {
         this->x = 0;
         this->y = 0;
+        std::cout << "1\n";
     }
 
     position(int a, int b) {
@@ -26,7 +27,7 @@ public:
     }
 };
 
-class circumference : public position  // окружность
+class circumference : public virtual position  // окружность
 {
 public:
     int rad;
@@ -48,7 +49,7 @@ public:
     }
 };
 
-class square : public position  // квдрат
+class square : public virtual position  // квдрат
 {
 public:
     int len; // длина одной стороны
@@ -70,7 +71,7 @@ public:
     }
 };
 
-class circumferenceINsquare : public circumference, public square
+class circumferenceINsquare : public virtual circumference, public virtual square
 {
 public:
     circumferenceINsquare() {}
